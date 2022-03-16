@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mealy Automaton</title>
+    <link rel="stylesheet" href="css/automatons.css">
+</head>
+<body>
+    <h1>Mealy Automaton</h1>
+    <h4 id= "instructions">Please enter the following information with the correct format:</h4>
+
+    <div class="info">
+        <div id="form">
+            <div class="input_cont">
+                <label for="states"> States: </label>
+                <input id="states" type="text" placeholder="A,B,C,D..." pattern=^[a-zA-Z0-9]+(,[a-zA-Z0-9]+)*$ required title="more than one character separated by commas">
+            </div>
+            <div class="input_cont">
+                <label for="i_alphabet"> Input Alphabet: </label>
+                <input id="i_alphabet" type="text" placeholder="0,1,2..." pattern=^[a-zA-Z0-9]+(,[a-zA-Z0-9]+)*$ required title="more than one character separated by commas">
+            </div>
+            <div class="input_cont">
+                <label for="o_alphabet"> Output Alphabet: </label>
+                <input id="o_alphabet" type="text" placeholder="0,1,2..." pattern=^[a-zA-Z0-9]+(,[a-zA-Z0-9]+)*$ required title="more than one character separated by commas">
+            </div>
+    
+            <button id= "submit" class="btn">Submit</button>
+        </div>
+
+        <div id="table"> 
+            <form id= "mealyForm" >
+            </form>
+        </div>
+
+    </div>
+        <script src="../src/mealy.js"></script>
+</body>
+</html>
